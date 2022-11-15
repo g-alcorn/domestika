@@ -1,0 +1,32 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <canvas width="600" height="600">
+
+    </canvas>
+
+    <script>
+      let canvas = document.querySelector('canvas');
+      let context = canvas.getContext('2d');
+
+      //Basic filled rectangle
+      // context.fillStyle = 'navy';
+      // context.fillRect(100,100,400,400);
+
+      //Custom rectangular border
+      context.beginPath();
+      context.rect(100,100,400,400);
+      context.lineWidth = 3;
+      context.stroke();
+
+      //Filled circle
+      context.beginPath();
+      context.arc(300,300,200,200, 0, Math.PI*2);
+      context.fill();
+
+      
+    </script>
+  </body>
+</html>
